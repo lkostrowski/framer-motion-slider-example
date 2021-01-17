@@ -1,0 +1,34 @@
+.rail {
+	padding: 3px;
+	border-radius: 31px;
+	height: 62px;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.railWrapper {
+	display: flex;
+	align-items: center;
+}
+
+.iconWrapper {
+	z-index: 50;
+	height: 56px;
+	width: 56px;
+	background: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 28px;
+}
+
+.icon {
+	color: gold;
+	width: 24px;
+	height: 24px;
+}
+
+label {
+	margin-left: 20px;
+	font-size: 14px;
+	font-weight: 500;
+}
