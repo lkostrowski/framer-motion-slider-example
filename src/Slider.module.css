@@ -1,7 +1,12 @@
 .rail {
+	--thumbSize: 56px;
+	--iconSize: 24px;
+	--railHeight: 62px;
+	--accentColor: #ddb491;
+
 	padding: 3px;
-	border-radius: 31px;
-	height: 62px;
+	border-radius: calc(var(--railHeight) / 2);
+	height: var(--railHeight);
 	background: rgba(255, 255, 255, 0.2);
 }
 
@@ -11,24 +16,26 @@
 }
 
 .iconWrapper {
-	z-index: 50;
-	height: 56px;
-	width: 56px;
-	background: black;
+	z-index: 1;
+	height: var(--thumbSize);
+	width: var(--thumbSize);
+	background: #222;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 28px;
+	border-radius: calc(var(--thumbSize) / 2);
 }
 
 .icon {
-	color: gold;
-	width: 24px;
-	height: 24px;
+	color: var(--accentColor);
+	width: var(--iconSize);
+	height: var(--iconSize);
 }
 
-label {
+.label {
+	display: block;
 	margin-left: 20px;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 500;
+	color: var(--accentColor);
 }
